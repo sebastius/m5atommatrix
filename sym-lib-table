@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "m5stack atom matrix")(type Legacy)(uri "${KIPRJMOD}/m5stack atom matrix.lib")(options "")(descr ""))
+)

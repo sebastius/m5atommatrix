@@ -1,0 +1,972 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L m5stack~atom~matrix:atommatrix U1
+U 1 1 5F53E4F5
+P 5000 1450
+F 0 "U1" H 5328 1696 50  0000 L CNN
+F 1 "atommatrix" H 5328 1605 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 5000 1450 50  0001 C CNN
+F 3 "" H 5000 1450 50  0001 C CNN
+	1    5000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5F53EFF6
+P 4450 750
+F 0 "#PWR04" H 4450 600 50  0001 C CNN
+F 1 "+5V" H 4465 923 50  0000 C CNN
+F 2 "" H 4450 750 50  0001 C CNN
+F 3 "" H 4450 750 50  0001 C CNN
+	1    4450 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5F53F9D1
+P 4450 1050
+F 0 "#PWR05" H 4450 800 50  0001 C CNN
+F 1 "GND" H 4455 877 50  0000 C CNN
+F 2 "" H 4450 1050 50  0001 C CNN
+F 3 "" H 4450 1050 50  0001 C CNN
+	1    4450 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 800  4450 800 
+Wire Wire Line
+	4450 800  4450 750 
+Wire Wire Line
+	4650 1000 4450 1000
+Wire Wire Line
+	4450 1000 4450 1050
+$Comp
+L m5stack~atom~matrix:atommatrix U5
+U 1 1 5F540928
+P 6550 1450
+F 0 "U5" H 6878 1696 50  0000 L CNN
+F 1 "atommatrix" H 6878 1605 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 6550 1450 50  0001 C CNN
+F 3 "" H 6550 1450 50  0001 C CNN
+	1    6550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5F542550
+P 6100 750
+F 0 "#PWR012" H 6100 600 50  0001 C CNN
+F 1 "+5V" H 6115 923 50  0000 C CNN
+F 2 "" H 6100 750 50  0001 C CNN
+F 3 "" H 6100 750 50  0001 C CNN
+	1    6100 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5F542D75
+P 6100 1000
+F 0 "#PWR013" H 6100 750 50  0001 C CNN
+F 1 "GND" H 6105 827 50  0000 C CNN
+F 2 "" H 6100 1000 50  0001 C CNN
+F 3 "" H 6100 1000 50  0001 C CNN
+	1    6100 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1000 6100 1000
+Wire Wire Line
+	6200 800  6100 800 
+Wire Wire Line
+	6100 800  6100 750 
+Text Label 4500 1650 2    50   ~ 0
+I2C_SDA
+Text Label 4500 1750 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	4500 1650 4650 1650
+Wire Wire Line
+	4500 1750 4650 1750
+Text Label 6050 1650 2    50   ~ 0
+I2C_SDA
+Text Label 6050 1750 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	6200 1650 6050 1650
+Wire Wire Line
+	6050 1750 6200 1750
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5F545C5A
+P 1550 2750
+F 0 "J1" H 1657 3617 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1657 3526 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1700 2750 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 2750 50  0001 C CNN
+	1    1550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F54A61D
+P 2550 2350
+F 0 "R1" V 2343 2350 50  0000 C CNN
+F 1 "5.1k" V 2434 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2480 2350 50  0001 C CNN
+F 3 "~" H 2550 2350 50  0001 C CNN
+	1    2550 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F54ACD3
+P 2550 2450
+F 0 "R2" V 2343 2450 50  0000 C CNN
+F 1 "5.1k" V 2434 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2480 2450 50  0001 C CNN
+F 3 "~" H 2550 2450 50  0001 C CNN
+	1    2550 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 2350 2150 2350
+Wire Wire Line
+	2150 2450 2400 2450
+$Comp
+L power:+5V #PWR02
+U 1 1 5F54B89E
+P 2300 2150
+F 0 "#PWR02" H 2300 2000 50  0001 C CNN
+F 1 "+5V" H 2315 2323 50  0000 C CNN
+F 2 "" H 2300 2150 50  0001 C CNN
+F 3 "" H 2300 2150 50  0001 C CNN
+	1    2300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F54BD51
+P 1550 3750
+F 0 "#PWR01" H 1550 3500 50  0001 C CNN
+F 1 "GND" H 1555 3577 50  0000 C CNN
+F 2 "" H 1550 3750 50  0001 C CNN
+F 3 "" H 1550 3750 50  0001 C CNN
+	1    1550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5F54C2C9
+P 2850 2450
+F 0 "#PWR03" H 2850 2200 50  0001 C CNN
+F 1 "GND" H 2855 2277 50  0000 C CNN
+F 2 "" H 2850 2450 50  0001 C CNN
+F 3 "" H 2850 2450 50  0001 C CNN
+	1    2850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2450 2700 2450
+Wire Wire Line
+	2700 2450 2700 2350
+Connection ~ 2700 2450
+Wire Wire Line
+	1550 3750 1550 3650
+Wire Wire Line
+	1550 3650 1250 3650
+Connection ~ 1550 3650
+Wire Wire Line
+	2150 2150 2300 2150
+$Comp
+L m5stack~atom~matrix:atommatrix U9
+U 1 1 5F54D657
+P 8050 1450
+F 0 "U9" H 8378 1696 50  0000 L CNN
+F 1 "atommatrix" H 8378 1605 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 8050 1450 50  0001 C CNN
+F 3 "" H 8050 1450 50  0001 C CNN
+	1    8050 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 5F54D661
+P 7600 750
+F 0 "#PWR020" H 7600 600 50  0001 C CNN
+F 1 "+5V" H 7615 923 50  0000 C CNN
+F 2 "" H 7600 750 50  0001 C CNN
+F 3 "" H 7600 750 50  0001 C CNN
+	1    7600 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5F54D66B
+P 7600 1000
+F 0 "#PWR021" H 7600 750 50  0001 C CNN
+F 1 "GND" H 7605 827 50  0000 C CNN
+F 2 "" H 7600 1000 50  0001 C CNN
+F 3 "" H 7600 1000 50  0001 C CNN
+	1    7600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1000 7600 1000
+Wire Wire Line
+	7700 800  7600 800 
+Wire Wire Line
+	7600 800  7600 750 
+Text Label 7550 1650 2    50   ~ 0
+I2C_SDA
+Text Label 7550 1750 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	7700 1650 7550 1650
+Wire Wire Line
+	7550 1750 7700 1750
+$Comp
+L m5stack~atom~matrix:atommatrix U13
+U 1 1 5F54FA70
+P 9500 1450
+F 0 "U13" H 9828 1696 50  0000 L CNN
+F 1 "atommatrix" H 9828 1605 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 9500 1450 50  0001 C CNN
+F 3 "" H 9500 1450 50  0001 C CNN
+	1    9500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR028
+U 1 1 5F54FA7A
+P 9050 750
+F 0 "#PWR028" H 9050 600 50  0001 C CNN
+F 1 "+5V" H 9065 923 50  0000 C CNN
+F 2 "" H 9050 750 50  0001 C CNN
+F 3 "" H 9050 750 50  0001 C CNN
+	1    9050 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5F54FA84
+P 9050 1000
+F 0 "#PWR029" H 9050 750 50  0001 C CNN
+F 1 "GND" H 9055 827 50  0000 C CNN
+F 2 "" H 9050 1000 50  0001 C CNN
+F 3 "" H 9050 1000 50  0001 C CNN
+	1    9050 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1000 9050 1000
+Wire Wire Line
+	9150 800  9050 800 
+Wire Wire Line
+	9050 800  9050 750 
+Text Label 9000 1650 2    50   ~ 0
+I2C_SDA
+Text Label 9000 1750 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	9150 1650 9000 1650
+Wire Wire Line
+	9000 1750 9150 1750
+$Comp
+L m5stack~atom~matrix:atommatrix U2
+U 1 1 5F552F4E
+P 5000 3050
+F 0 "U2" H 5328 3296 50  0000 L CNN
+F 1 "atommatrix" H 5328 3205 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 5000 3050 50  0001 C CNN
+F 3 "" H 5000 3050 50  0001 C CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5F552F58
+P 4450 2350
+F 0 "#PWR06" H 4450 2200 50  0001 C CNN
+F 1 "+5V" H 4465 2523 50  0000 C CNN
+F 2 "" H 4450 2350 50  0001 C CNN
+F 3 "" H 4450 2350 50  0001 C CNN
+	1    4450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5F552F62
+P 4450 2650
+F 0 "#PWR07" H 4450 2400 50  0001 C CNN
+F 1 "GND" H 4455 2477 50  0000 C CNN
+F 2 "" H 4450 2650 50  0001 C CNN
+F 3 "" H 4450 2650 50  0001 C CNN
+	1    4450 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2400 4450 2400
+Wire Wire Line
+	4450 2400 4450 2350
+Wire Wire Line
+	4650 2600 4450 2600
+Wire Wire Line
+	4450 2600 4450 2650
+$Comp
+L m5stack~atom~matrix:atommatrix U6
+U 1 1 5F552F70
+P 6550 3050
+F 0 "U6" H 6878 3296 50  0000 L CNN
+F 1 "atommatrix" H 6878 3205 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 6550 3050 50  0001 C CNN
+F 3 "" H 6550 3050 50  0001 C CNN
+	1    6550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 5F552F7A
+P 6100 2350
+F 0 "#PWR014" H 6100 2200 50  0001 C CNN
+F 1 "+5V" H 6115 2523 50  0000 C CNN
+F 2 "" H 6100 2350 50  0001 C CNN
+F 3 "" H 6100 2350 50  0001 C CNN
+	1    6100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5F552F84
+P 6100 2600
+F 0 "#PWR015" H 6100 2350 50  0001 C CNN
+F 1 "GND" H 6105 2427 50  0000 C CNN
+F 2 "" H 6100 2600 50  0001 C CNN
+F 3 "" H 6100 2600 50  0001 C CNN
+	1    6100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2600 6100 2600
+Wire Wire Line
+	6200 2400 6100 2400
+Wire Wire Line
+	6100 2400 6100 2350
+Text Label 4500 3250 2    50   ~ 0
+I2C_SDA
+Text Label 4500 3350 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	4500 3250 4650 3250
+Wire Wire Line
+	4500 3350 4650 3350
+Text Label 6050 3250 2    50   ~ 0
+I2C_SDA
+Text Label 6050 3350 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	6200 3250 6050 3250
+Wire Wire Line
+	6050 3350 6200 3350
+$Comp
+L m5stack~atom~matrix:atommatrix U10
+U 1 1 5F552F99
+P 8050 3050
+F 0 "U10" H 8378 3296 50  0000 L CNN
+F 1 "atommatrix" H 8378 3205 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 8050 3050 50  0001 C CNN
+F 3 "" H 8050 3050 50  0001 C CNN
+	1    8050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR022
+U 1 1 5F552FA3
+P 7600 2350
+F 0 "#PWR022" H 7600 2200 50  0001 C CNN
+F 1 "+5V" H 7615 2523 50  0000 C CNN
+F 2 "" H 7600 2350 50  0001 C CNN
+F 3 "" H 7600 2350 50  0001 C CNN
+	1    7600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5F552FAD
+P 7600 2600
+F 0 "#PWR023" H 7600 2350 50  0001 C CNN
+F 1 "GND" H 7605 2427 50  0000 C CNN
+F 2 "" H 7600 2600 50  0001 C CNN
+F 3 "" H 7600 2600 50  0001 C CNN
+	1    7600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2600 7600 2600
+Wire Wire Line
+	7700 2400 7600 2400
+Wire Wire Line
+	7600 2400 7600 2350
+Text Label 7550 3250 2    50   ~ 0
+I2C_SDA
+Text Label 7550 3350 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	7700 3250 7550 3250
+Wire Wire Line
+	7550 3350 7700 3350
+$Comp
+L m5stack~atom~matrix:atommatrix U14
+U 1 1 5F552FBE
+P 9500 3050
+F 0 "U14" H 9828 3296 50  0000 L CNN
+F 1 "atommatrix" H 9828 3205 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 9500 3050 50  0001 C CNN
+F 3 "" H 9500 3050 50  0001 C CNN
+	1    9500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR030
+U 1 1 5F552FC8
+P 9050 2350
+F 0 "#PWR030" H 9050 2200 50  0001 C CNN
+F 1 "+5V" H 9065 2523 50  0000 C CNN
+F 2 "" H 9050 2350 50  0001 C CNN
+F 3 "" H 9050 2350 50  0001 C CNN
+	1    9050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 5F552FD2
+P 9050 2600
+F 0 "#PWR031" H 9050 2350 50  0001 C CNN
+F 1 "GND" H 9055 2427 50  0000 C CNN
+F 2 "" H 9050 2600 50  0001 C CNN
+F 3 "" H 9050 2600 50  0001 C CNN
+	1    9050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2600 9050 2600
+Wire Wire Line
+	9150 2400 9050 2400
+Wire Wire Line
+	9050 2400 9050 2350
+Text Label 9000 3250 2    50   ~ 0
+I2C_SDA
+Text Label 9000 3350 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	9150 3250 9000 3250
+Wire Wire Line
+	9000 3350 9150 3350
+$Comp
+L m5stack~atom~matrix:atommatrix U3
+U 1 1 5F56CD71
+P 5000 4550
+F 0 "U3" H 5328 4796 50  0000 L CNN
+F 1 "atommatrix" H 5328 4705 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 5000 4550 50  0001 C CNN
+F 3 "" H 5000 4550 50  0001 C CNN
+	1    5000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5F56CD7B
+P 4450 3850
+F 0 "#PWR08" H 4450 3700 50  0001 C CNN
+F 1 "+5V" H 4465 4023 50  0000 C CNN
+F 2 "" H 4450 3850 50  0001 C CNN
+F 3 "" H 4450 3850 50  0001 C CNN
+	1    4450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5F56CD85
+P 4450 4150
+F 0 "#PWR09" H 4450 3900 50  0001 C CNN
+F 1 "GND" H 4455 3977 50  0000 C CNN
+F 2 "" H 4450 4150 50  0001 C CNN
+F 3 "" H 4450 4150 50  0001 C CNN
+	1    4450 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3900 4450 3900
+Wire Wire Line
+	4450 3900 4450 3850
+Wire Wire Line
+	4650 4100 4450 4100
+Wire Wire Line
+	4450 4100 4450 4150
+$Comp
+L m5stack~atom~matrix:atommatrix U7
+U 1 1 5F56CD93
+P 6550 4550
+F 0 "U7" H 6878 4796 50  0000 L CNN
+F 1 "atommatrix" H 6878 4705 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 6550 4550 50  0001 C CNN
+F 3 "" H 6550 4550 50  0001 C CNN
+	1    6550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR016
+U 1 1 5F56CD9D
+P 6100 3850
+F 0 "#PWR016" H 6100 3700 50  0001 C CNN
+F 1 "+5V" H 6115 4023 50  0000 C CNN
+F 2 "" H 6100 3850 50  0001 C CNN
+F 3 "" H 6100 3850 50  0001 C CNN
+	1    6100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5F56CDA7
+P 6100 4100
+F 0 "#PWR017" H 6100 3850 50  0001 C CNN
+F 1 "GND" H 6105 3927 50  0000 C CNN
+F 2 "" H 6100 4100 50  0001 C CNN
+F 3 "" H 6100 4100 50  0001 C CNN
+	1    6100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4100 6100 4100
+Wire Wire Line
+	6200 3900 6100 3900
+Wire Wire Line
+	6100 3900 6100 3850
+Text Label 4500 4750 2    50   ~ 0
+I2C_SDA
+Text Label 4500 4850 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	4500 4750 4650 4750
+Wire Wire Line
+	4500 4850 4650 4850
+Text Label 6050 4750 2    50   ~ 0
+I2C_SDA
+Text Label 6050 4850 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	6200 4750 6050 4750
+Wire Wire Line
+	6050 4850 6200 4850
+$Comp
+L m5stack~atom~matrix:atommatrix U11
+U 1 1 5F56CDBC
+P 8050 4550
+F 0 "U11" H 8378 4796 50  0000 L CNN
+F 1 "atommatrix" H 8378 4705 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 8050 4550 50  0001 C CNN
+F 3 "" H 8050 4550 50  0001 C CNN
+	1    8050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR024
+U 1 1 5F56CDC6
+P 7600 3850
+F 0 "#PWR024" H 7600 3700 50  0001 C CNN
+F 1 "+5V" H 7615 4023 50  0000 C CNN
+F 2 "" H 7600 3850 50  0001 C CNN
+F 3 "" H 7600 3850 50  0001 C CNN
+	1    7600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5F56CDD0
+P 7600 4100
+F 0 "#PWR025" H 7600 3850 50  0001 C CNN
+F 1 "GND" H 7605 3927 50  0000 C CNN
+F 2 "" H 7600 4100 50  0001 C CNN
+F 3 "" H 7600 4100 50  0001 C CNN
+	1    7600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4100 7600 4100
+Wire Wire Line
+	7700 3900 7600 3900
+Wire Wire Line
+	7600 3900 7600 3850
+Text Label 7550 4750 2    50   ~ 0
+I2C_SDA
+Text Label 7550 4850 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	7700 4750 7550 4750
+Wire Wire Line
+	7550 4850 7700 4850
+$Comp
+L m5stack~atom~matrix:atommatrix U15
+U 1 1 5F56CDE1
+P 9500 4550
+F 0 "U15" H 9828 4796 50  0000 L CNN
+F 1 "atommatrix" H 9828 4705 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 9500 4550 50  0001 C CNN
+F 3 "" H 9500 4550 50  0001 C CNN
+	1    9500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR032
+U 1 1 5F56CDEB
+P 9050 3850
+F 0 "#PWR032" H 9050 3700 50  0001 C CNN
+F 1 "+5V" H 9065 4023 50  0000 C CNN
+F 2 "" H 9050 3850 50  0001 C CNN
+F 3 "" H 9050 3850 50  0001 C CNN
+	1    9050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR033
+U 1 1 5F56CDF5
+P 9050 4100
+F 0 "#PWR033" H 9050 3850 50  0001 C CNN
+F 1 "GND" H 9055 3927 50  0000 C CNN
+F 2 "" H 9050 4100 50  0001 C CNN
+F 3 "" H 9050 4100 50  0001 C CNN
+	1    9050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4100 9050 4100
+Wire Wire Line
+	9150 3900 9050 3900
+Wire Wire Line
+	9050 3900 9050 3850
+Text Label 9000 4750 2    50   ~ 0
+I2C_SDA
+Text Label 9000 4850 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	9150 4750 9000 4750
+Wire Wire Line
+	9000 4850 9150 4850
+$Comp
+L m5stack~atom~matrix:atommatrix U4
+U 1 1 5F56CE06
+P 5000 6150
+F 0 "U4" H 5328 6396 50  0000 L CNN
+F 1 "atommatrix" H 5328 6305 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 5000 6150 50  0001 C CNN
+F 3 "" H 5000 6150 50  0001 C CNN
+	1    5000 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5F56CE10
+P 4450 5450
+F 0 "#PWR010" H 4450 5300 50  0001 C CNN
+F 1 "+5V" H 4465 5623 50  0000 C CNN
+F 2 "" H 4450 5450 50  0001 C CNN
+F 3 "" H 4450 5450 50  0001 C CNN
+	1    4450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5F56CE1A
+P 4450 5750
+F 0 "#PWR011" H 4450 5500 50  0001 C CNN
+F 1 "GND" H 4455 5577 50  0000 C CNN
+F 2 "" H 4450 5750 50  0001 C CNN
+F 3 "" H 4450 5750 50  0001 C CNN
+	1    4450 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5500 4450 5500
+Wire Wire Line
+	4450 5500 4450 5450
+Wire Wire Line
+	4650 5700 4450 5700
+Wire Wire Line
+	4450 5700 4450 5750
+$Comp
+L m5stack~atom~matrix:atommatrix U8
+U 1 1 5F56CE28
+P 6550 6150
+F 0 "U8" H 6878 6396 50  0000 L CNN
+F 1 "atommatrix" H 6878 6305 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 6550 6150 50  0001 C CNN
+F 3 "" H 6550 6150 50  0001 C CNN
+	1    6550 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 5F56CE32
+P 6100 5450
+F 0 "#PWR018" H 6100 5300 50  0001 C CNN
+F 1 "+5V" H 6115 5623 50  0000 C CNN
+F 2 "" H 6100 5450 50  0001 C CNN
+F 3 "" H 6100 5450 50  0001 C CNN
+	1    6100 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5F56CE3C
+P 6100 5700
+F 0 "#PWR019" H 6100 5450 50  0001 C CNN
+F 1 "GND" H 6105 5527 50  0000 C CNN
+F 2 "" H 6100 5700 50  0001 C CNN
+F 3 "" H 6100 5700 50  0001 C CNN
+	1    6100 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5700 6100 5700
+Wire Wire Line
+	6200 5500 6100 5500
+Wire Wire Line
+	6100 5500 6100 5450
+Text Label 4500 6350 2    50   ~ 0
+I2C_SDA
+Text Label 4500 6450 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	4500 6350 4650 6350
+Wire Wire Line
+	4500 6450 4650 6450
+Text Label 6050 6350 2    50   ~ 0
+I2C_SDA
+Text Label 6050 6450 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	6200 6350 6050 6350
+Wire Wire Line
+	6050 6450 6200 6450
+$Comp
+L m5stack~atom~matrix:atommatrix U12
+U 1 1 5F56CE51
+P 8050 6150
+F 0 "U12" H 8378 6396 50  0000 L CNN
+F 1 "atommatrix" H 8378 6305 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 8050 6150 50  0001 C CNN
+F 3 "" H 8050 6150 50  0001 C CNN
+	1    8050 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR026
+U 1 1 5F56CE5B
+P 7600 5450
+F 0 "#PWR026" H 7600 5300 50  0001 C CNN
+F 1 "+5V" H 7615 5623 50  0000 C CNN
+F 2 "" H 7600 5450 50  0001 C CNN
+F 3 "" H 7600 5450 50  0001 C CNN
+	1    7600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5F56CE65
+P 7600 5700
+F 0 "#PWR027" H 7600 5450 50  0001 C CNN
+F 1 "GND" H 7605 5527 50  0000 C CNN
+F 2 "" H 7600 5700 50  0001 C CNN
+F 3 "" H 7600 5700 50  0001 C CNN
+	1    7600 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5700 7600 5700
+Wire Wire Line
+	7700 5500 7600 5500
+Wire Wire Line
+	7600 5500 7600 5450
+Text Label 7550 6350 2    50   ~ 0
+I2C_SDA
+Text Label 7550 6450 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	7700 6350 7550 6350
+Wire Wire Line
+	7550 6450 7700 6450
+$Comp
+L m5stack~atom~matrix:atommatrix U16
+U 1 1 5F56CE76
+P 9500 6150
+F 0 "U16" H 9828 6396 50  0000 L CNN
+F 1 "atommatrix" H 9828 6305 50  0000 L CNN
+F 2 "m5matrix:M5atom matrix" H 9500 6150 50  0001 C CNN
+F 3 "" H 9500 6150 50  0001 C CNN
+	1    9500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR034
+U 1 1 5F56CE80
+P 9050 5450
+F 0 "#PWR034" H 9050 5300 50  0001 C CNN
+F 1 "+5V" H 9065 5623 50  0000 C CNN
+F 2 "" H 9050 5450 50  0001 C CNN
+F 3 "" H 9050 5450 50  0001 C CNN
+	1    9050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 5F56CE8A
+P 9050 5700
+F 0 "#PWR035" H 9050 5450 50  0001 C CNN
+F 1 "GND" H 9055 5527 50  0000 C CNN
+F 2 "" H 9050 5700 50  0001 C CNN
+F 3 "" H 9050 5700 50  0001 C CNN
+	1    9050 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5700 9050 5700
+Wire Wire Line
+	9150 5500 9050 5500
+Wire Wire Line
+	9050 5500 9050 5450
+Text Label 9000 6350 2    50   ~ 0
+I2C_SDA
+Text Label 9000 6450 2    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	9150 6350 9000 6350
+Wire Wire Line
+	9000 6450 9150 6450
+$Comp
+L Device:R R3
+U 1 1 5F59D47C
+P 3100 1200
+F 0 "R3" H 3170 1246 50  0000 L CNN
+F 1 "R" H 3170 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 1200 50  0001 C CNN
+F 3 "~" H 3100 1200 50  0001 C CNN
+	1    3100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F59D58A
+P 3450 1200
+F 0 "R4" H 3520 1246 50  0000 L CNN
+F 1 "R" H 3520 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 1200 50  0001 C CNN
+F 3 "~" H 3450 1200 50  0001 C CNN
+	1    3450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR038
+U 1 1 5F59E685
+P 3450 950
+F 0 "#PWR038" H 3450 800 50  0001 C CNN
+F 1 "+3V3" H 3465 1123 50  0000 C CNN
+F 2 "" H 3450 950 50  0001 C CNN
+F 3 "" H 3450 950 50  0001 C CNN
+	1    3450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR036
+U 1 1 5F59EF60
+P 3100 950
+F 0 "#PWR036" H 3100 800 50  0001 C CNN
+F 1 "+3V3" H 3115 1123 50  0000 C CNN
+F 2 "" H 3100 950 50  0001 C CNN
+F 3 "" H 3100 950 50  0001 C CNN
+	1    3100 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1050 3450 950 
+Wire Wire Line
+	3100 950  3100 1050
+Wire Wire Line
+	3100 1350 3100 1450
+Wire Wire Line
+	3450 1350 3450 1450
+Text Label 3100 1450 2    50   ~ 0
+I2C_SDA
+Text Label 3450 1450 3    50   ~ 0
+I2C_SCL
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5F5B128E
+P 7450 5600
+F 0 "#PWR0101" H 7450 5450 50  0001 C CNN
+F 1 "+3V3" H 7465 5773 50  0000 C CNN
+F 2 "" H 7450 5600 50  0001 C CNN
+F 3 "" H 7450 5600 50  0001 C CNN
+	1    7450 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5600 7700 5600
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5F5B717C
+P 3300 3200
+F 0 "J2" H 3408 3481 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 3408 3390 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 3300 3200 50  0001 C CNN
+F 3 "~" H 3300 3200 50  0001 C CNN
+	1    3300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5F5B8B3E
+P 3750 3100
+F 0 "#PWR037" H 3750 2850 50  0001 C CNN
+F 1 "GND" V 3755 2972 50  0000 R CNN
+F 2 "" H 3750 3100 50  0001 C CNN
+F 3 "" H 3750 3100 50  0001 C CNN
+	1    3750 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR039
+U 1 1 5F5B92E3
+P 3750 3200
+F 0 "#PWR039" H 3750 3050 50  0001 C CNN
+F 1 "+5V" V 3765 3328 50  0000 L CNN
+F 2 "" H 3750 3200 50  0001 C CNN
+F 3 "" H 3750 3200 50  0001 C CNN
+	1    3750 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 3100 3500 3100
+Wire Wire Line
+	3500 3200 3750 3200
+Text Label 3600 3300 0    50   ~ 0
+I2C_SDA
+Text Label 3600 3400 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	3600 3400 3500 3400
+Wire Wire Line
+	3500 3300 3600 3300
+$EndSCHEMATC
